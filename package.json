@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/argon-dashboard-react/issues"
   },
-  "homepage": "https://demos.creative-tim.com/argon-dashboard-react/",
+  "homepage": "https://637611ec67cd8b6efc8e8eb6--dainty-figolla-a8d3c2.netlify.app/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
