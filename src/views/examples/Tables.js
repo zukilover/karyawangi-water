@@ -18,23 +18,12 @@
 // reactstrap components
 import { useContext, useMemo, useState } from "react";
 import {
-  Badge,
   Card,
   CardHeader,
-  CardFooter,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  DropdownToggle,
   Media,
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  Progress,
   Table,
   Container,
   Row,
-  UncontrolledTooltip,
   Input
 } from "reactstrap";
 import { AppContext } from "store";
