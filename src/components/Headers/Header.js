@@ -29,7 +29,7 @@ const Header = () => {
   const [appState, setAppState] = useContext(AppContext)
   return (
     <>
-      <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
+      <div className="header pb-8 pt-5 pt-md-8">
         <Container fluid>
           <div className="header-body">
             {/* Card stats */}
@@ -43,7 +43,7 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Meteran awal - pusat
+                          Meteran PLN awal - pusat
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
                           <Input defaultValue={appState.startKwh} onChange={e => setAppState({
@@ -70,7 +70,7 @@ const Header = () => {
                           tag="h5"
                           className="text-uppercase text-muted mb-0"
                         >
-                          Meteran akhir - pusat
+                          Meteran PLN akhir - pusat
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
                         <Input defaultValue={appState.endKwh} onChange={e => setAppState({
@@ -100,7 +100,7 @@ const Header = () => {
                           Total penggunaan listrik
                         </CardTitle>
                         <span className="h2 font-weight-bold mb-0">
-                          {appState.endKwh - appState.startKwh} kwh Rp ({numberWithCommas((appState.endKwh - appState.startKwh) * appState.pricePerKwh)})
+                          {(appState.startKwh - appState.endKwh).toFixed(1)} kwh Rp ({numberWithCommas(Math.round((appState.startKwh - appState.endKwh) * appState.pricePerKwh))})
                         </span>
                       </div>
                       <Col className="col-auto">
